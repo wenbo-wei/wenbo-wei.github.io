@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wenbo Wei - Homepage</title>
+  <title>Wenbo Wei | Computer Vision Research</title>
+  <meta name="description" content="Wenbo Wei, PhD in Computer Science from the University of Warwick. Research in occlusion-aware panoptic segmentation, PEMOLA, and occlusion benchmarks.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,10 +43,10 @@
         <p class="site-email">wenbo.weiwb@gmail.com</p>
 
         <div class="social-icons">
-          <a href="mailto:wenbo.weiwb@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-          <a href="https://github.com/wenbo-wei" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:wenbo.weiwb@gmail.com" title="Email" aria-label="Email Wenbo Wei"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://scholar.google.com/citations?user=45fCx08AAAAJ&amp;hl=en" title="Google Scholar" aria-label="Wenbo Wei on Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+          <a href="https://github.com/wenbo-wei" title="GitHub" aria-label="Wenbo Wei on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/wenbo-wei-15116918b/" title="LinkedIn" aria-label="Wenbo Wei on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </header>
@@ -54,8 +55,8 @@
       <div class="section" id="about">
         <h2 class="section-title">About Me</h2>
         <div class="section-body">
-          <p>Hello! I am <strong>Wenbo Wei (魏文博)</strong>, a PhD candidate in Computer Science at the <strong>University of Warwick</strong>. My research focuses on <strong>occlusion-aware panoptic segmentation</strong>, with the goal of enabling robust scene understanding in real-world occluded environments.</p>
-          <p>I have built large-scale occlusion benchmarks, developed plug-and-play transformer modules, and published work at IEEE ICME and ICASSP. My viva was passed in March 2026, with minor corrections expected to be completed by June 2026.</p>
+          <p>Hello! I am <strong>Wenbo Wei (魏文博)</strong>. I received my PhD in Computer Science from the <strong>University of Warwick</strong> in June 2026. My research focuses on <strong>occlusion-aware panoptic segmentation</strong>, with the goal of enabling robust scene understanding in real-world occluded environments.</p>
+          <p>My work spans occlusion benchmark construction, curriculum learning, and lightweight modules for transformer-based segmentation. I developed <a href="https://github.com/wenbo-wei/PEMOLA">PEMOLA</a> and built the <a href="https://github.com/wenbo-wei/COCO-OLAC">COCO-OLAC</a> and <a href="https://github.com/wenbo-wei/PEMOLA/releases/tag/cityscapes-olac-annotations-v1.0">Cityscapes-OLAC</a> benchmarks, with publications at IEEE ICME 2026 and ICASSP 2025.</p>
           <p>My research interests include computer vision, scene understanding, deep learning, and image segmentation.</p>
         </div>
       </div>
@@ -70,8 +71,8 @@
                 <p class="exp-title"><strong>University of Warwick</strong></p>
                 <p class="exp-detail">PhD in Computer Science, School of Computer Science</p>
                 <p class="exp-detail">Coventry, United Kingdom</p>
-                <p class="exp-detail"><em>Viva Passed (03/2026), Completing Minor Corrections (Expected 06/2026)</em></p>
-                <p class="exp-period">01/2021 – 01/2026</p>
+                <p class="exp-detail">Research: Occlusion-aware panoptic segmentation</p>
+                <p class="exp-period">01/2021 – 06/2026</p>
               </div>
             </div>
           </div>
@@ -139,17 +140,28 @@
         <h2 class="section-title">Projects</h2>
         <div class="section-body">
           <div class="card project-card">
-            <p><strong>Lightweight Occlusion-Aware Position Encoding for Robust Panoptic Segmentation</strong> <span style="float:right; color: var(--muted);">11/2024 – 06/2025</span></p>
-            <p>Developed a plug-and-play occlusion-aware module (PEMOLA) to boost transformer-based panoptic segmentation in occluded scenes. Achieved consistent performance gains across different occlusion severities with minimal computational overhead.</p>
+            <p><strong>Lightweight Occlusion-Aware Position Encoding for Robust Panoptic Segmentation</strong></p>
+            <p class="exp-period">11/2024 – 06/2025</p>
+            <p>Developed PEMOLA, a plug-and-play module for Mask2Former and Mask DINO that combines occlusion-level attention with learnable occlusion-label embeddings to modulate position embeddings. Improved panoptic segmentation across different occlusion severities with minimal computational overhead.</p>
+            <p><a href="https://arxiv.org/abs/2607.18112">Paper</a> &middot; <a href="https://github.com/wenbo-wei/PEMOLA">Code</a> &middot; <a href="https://huggingface.co/weiwb/PEMOLA">Model weights</a></p>
           </div>
 
           <div class="card project-card">
-            <p><strong>Large-Scale Occlusion Benchmark Construction and Model Optimization</strong> <span style="float:right; color: var(--muted);">06/2023 – 07/2024</span></p>
+            <p><strong>Curriculum Learning for Panoptic Segmentation under Occlusion</strong></p>
+            <p class="exp-period">05/2024 – 09/2024</p>
+            <p>Developed a curriculum that orders training images from low to high occlusion within each epoch. Under a uniform distribution of occlusion levels, this strategy accelerated convergence and improved segmentation accuracy and generalisation in occluded scenes.</p>
+          </div>
+
+          <div class="card project-card">
+            <p><strong>Large-Scale Occlusion Benchmark Construction and Model Optimization</strong></p>
+            <p class="exp-period">06/2023 – 07/2024</p>
             <p>Built two large-scale occlusion-annotated datasets (COCO-OLAC &amp; Cityscapes-OLAC) with a unified manual annotation pipeline covering three occlusion levels. Systematically quantified the impact of occlusion on SOTA panoptic segmentation models and proposed a contrastive learning-based method to enhance robustness.</p>
+            <p><a href="https://arxiv.org/abs/2409.12760">Paper</a> &middot; <a href="https://github.com/wenbo-wei/COCO-OLAC">Code</a> &middot; <a href="https://github.com/wenbo-wei/COCO-OLAC/releases/tag/annotations-v1.0">COCO-OLAC annotations</a> &middot; <a href="https://github.com/wenbo-wei/PEMOLA/releases/tag/cityscapes-olac-annotations-v1.0">Cityscapes-OLAC annotations</a></p>
           </div>
 
           <div class="card project-card">
-            <p><strong>MRI Reconstruction based on U-Net</strong> <span style="float:right; color: var(--muted);">11/2019 – 12/2019</span></p>
+            <p><strong>MRI Reconstruction based on U-Net</strong></p>
+            <p class="exp-period">11/2019 – 12/2019</p>
             <p>Proposed a U-Net-based MRI image reconstruction method for the fastMRI challenge. Achieved <strong>1st rank</strong> in the 4-fold track and <strong>2nd rank</strong> in the 8-fold track among 39 participating teams.</p>
           </div>
         </div>
@@ -166,6 +178,7 @@
                     <div class="title">Occlusion-Aware Panoptic Segmentation with Joint Position Embedding and Occlusion-Level Attention</div>
                     <div class="author"><strong>Wenbo Wei</strong>, Jun Wang, Shan Raza, and Abhir Bhalerao</div>
                     <div class="periodical"><em><strong>ICME</strong></em>, IEEE, 2026</div>
+                    <div class="links"><a href="https://arxiv.org/abs/2607.18112">Paper</a> &middot; <a href="https://github.com/wenbo-wei/PEMOLA">Code</a> &middot; <a href="https://huggingface.co/weiwb/PEMOLA">Model weights</a></div>
                   </div>
                 </div>
               </li>
@@ -175,6 +188,7 @@
                     <div class="title">COCO-OLAC: A Benchmark for Occluded Panoptic Segmentation and Image Understanding</div>
                     <div class="author"><strong>Wenbo Wei</strong>, Jun Wang, and Abhir Bhalerao</div>
                     <div class="periodical"><em><strong>ICASSP</strong></em>, IEEE, 2025, pp. 1–5</div>
+                    <div class="links"><a href="https://arxiv.org/abs/2409.12760">Paper</a> &middot; <a href="https://github.com/wenbo-wei/COCO-OLAC">Code &amp; dataset</a></div>
                   </div>
                 </div>
               </li>
@@ -183,7 +197,7 @@
                   <div class="pub-content">
                     <div class="title">Occlusion-Aware Panoptic Segmentation</div>
                     <div class="author"><strong>Wenbo Wei</strong></div>
-                    <div class="periodical"><em>PhD Thesis</em>, University of Warwick</div>
+                    <div class="periodical"><em>PhD Thesis</em>, University of Warwick, 2026</div>
                   </div>
                 </div>
               </li>
@@ -204,6 +218,18 @@
               <span class="award-icon">🥈</span>
               <div class="award-text"><strong>2nd Rank – fastMRI 8-fold Track</strong><br><span style="color: var(--muted);">Among 39 teams, 2019</span></div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="skills">
+        <h2 class="section-title">Skills &amp; Languages</h2>
+        <div class="section-body">
+          <div class="card">
+            <p><strong>Programming:</strong> Python, C</p>
+            <p><strong>Frameworks:</strong> PyTorch, Detectron2</p>
+            <p><strong>Research:</strong> Academic writing, critical thinking, peer review</p>
+            <p><strong>Languages:</strong> Mandarin (native), English (professional working proficiency)</p>
           </div>
         </div>
       </div>
