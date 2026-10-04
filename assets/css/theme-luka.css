@@ -398,6 +398,35 @@ body.theme-luka .pub-content .links a {
   font-weight: 500;
 }
 
+body.theme-luka .pub-figure {
+  margin: 16px 0 0;
+}
+
+body.theme-luka .pub-figure > a {
+  display: block;
+  padding: 8px;
+  border: 1px solid var(--luka-border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+body.theme-luka .pub-figure > a:hover {
+  filter: none;
+}
+
+body.theme-luka .pub-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body.theme-luka .pub-figure figcaption {
+  margin-top: 8px;
+  color: var(--luka-secondary);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 body.theme-luka .awards-grid {
   display: flex;
   flex-direction: column;
