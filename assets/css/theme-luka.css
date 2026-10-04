@@ -420,13 +420,6 @@ body.theme-luka .pub-figure img {
   height: auto;
 }
 
-body.theme-luka .pub-figure figcaption {
-  margin-top: 8px;
-  color: var(--luka-secondary);
-  font-size: 12px;
-  line-height: 1.5;
-}
-
 body.theme-luka .awards-grid {
   display: flex;
   flex-direction: column;
