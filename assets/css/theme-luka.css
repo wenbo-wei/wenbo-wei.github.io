@@ -480,6 +480,73 @@ body.theme-luka .visitor-count {
   font-variant-numeric: tabular-nums;
 }
 
+body.theme-luka .traffic-trend {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  margin: 18px auto 0;
+  color: var(--luka-accent);
+}
+
+body.theme-luka .traffic-trend-heading,
+body.theme-luka .traffic-trend-range {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--luka-secondary);
+  font-size: 10px;
+}
+
+body.theme-luka .traffic-trend-heading {
+  font-size: 11px;
+}
+
+body.theme-luka #traffic-trend-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  border-radius: 4px;
+}
+
+body.theme-luka #traffic-trend-chart:focus-visible {
+  outline: 1px solid var(--luka-accent);
+  outline-offset: 4px;
+}
+
+body.theme-luka .traffic-baseline {
+  fill: none;
+  stroke: var(--luka-border);
+}
+
+body.theme-luka .traffic-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body.theme-luka .traffic-area { fill: currentColor; opacity: 0.08; }
+body.theme-luka .traffic-dot { fill: currentColor; }
+body.theme-luka .traffic-marker { fill: currentColor; stroke: var(--luka-bg); stroke-width: 2; }
+
+body.theme-luka .traffic-tooltip {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 7px;
+  border: 1px solid var(--luka-border);
+  border-radius: 4px;
+  background: var(--luka-bg);
+  color: var(--luka-text);
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 body.theme-luka h1,
 body.theme-luka h2,
 body.theme-luka h3,

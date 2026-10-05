@@ -16,7 +16,7 @@
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20261005-visitor-stats">
+  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20261005-traffic-trend">
 </head>
 <body class="theme-luka">
   <nav class="top-nav">
@@ -235,6 +235,19 @@
         <span aria-hidden="true">&middot;</span>
         <span title="Total page views">Page views <span id="busuanzi_site_pv" class="visitor-count">&mdash;</span></span>
       </div>
+      <figure class="traffic-trend" id="traffic-trend">
+        <figcaption class="traffic-trend-heading">
+          <span>Cumulative page views</span>
+          <span id="traffic-trend-status" aria-live="polite">Loading…</span>
+        </figcaption>
+        <output class="traffic-tooltip" hidden></output>
+        <svg id="traffic-trend-chart" viewBox="0 0 480 94" role="img" tabindex="0" aria-labelledby="traffic-trend-title">
+          <title id="traffic-trend-title">Cumulative page views. Waiting for recorded samples.</title>
+          <path class="traffic-baseline" d="M 10 84 H 470"></path>
+          <g id="traffic-trend-plot"></g>
+        </svg>
+        <div class="traffic-trend-range"><span id="traffic-trend-start"></span><span id="traffic-trend-end"></span></div>
+      </figure>
     </footer>
   </div>
 
@@ -281,5 +294,6 @@
     })();
   </script>
   <script defer src="https://busuanzi.9420.ltd/js" data-style="comma"></script>
+  <script type="module" src="assets/js/traffic-trend.mjs?v=20261005"></script>
 </body>
 </html>
