@@ -464,6 +464,22 @@ body.theme-luka .template-credit {
   font-size: 12px;
 }
 
+body.theme-luka .visitor-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 12px;
+  margin-top: 14px;
+  color: var(--luka-secondary);
+  font-size: 12px;
+}
+
+body.theme-luka .visitor-count {
+  color: var(--luka-accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
 body.theme-luka h1,
 body.theme-luka h2,
 body.theme-luka h3,
