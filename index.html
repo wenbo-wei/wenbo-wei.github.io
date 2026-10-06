@@ -16,7 +16,7 @@
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20261006-publication-colors">
+  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20261006-figure-lightbox">
 </head>
 <body class="theme-luka">
   <nav class="top-nav">
@@ -78,9 +78,9 @@
                       <a href="https://huggingface.co/weiwb/PEMOLA" title="Hugging Face model weights" aria-label="View PEMOLA model weights on Hugging Face">model</a>
                     </div>
                     <figure class="pub-figure">
-                      <a href="assets/img/publications/pemola-method.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size PEMOLA method diagram">
+                      <button class="pub-figure-preview" type="button" aria-haspopup="dialog" aria-controls="publication-lightbox" aria-label="Enlarge the PEMOLA method diagram">
                         <img src="assets/img/publications/pemola-method.png" alt="PEMOLA framework: occlusion-level attention and label embeddings jointly modulate position embeddings for panoptic segmentation." width="2770" height="928" loading="lazy" decoding="async">
-                      </a>
+                      </button>
                     </figure>
                   </div>
                 </div>
@@ -97,9 +97,9 @@
                       <a href="https://huggingface.co/datasets/weiwb/COCO-OLAC" title="Hugging Face dataset" aria-label="View the COCO-OLAC dataset on Hugging Face">data</a>
                     </div>
                     <figure class="pub-figure">
-                      <a href="assets/img/publications/coco-olac-method.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size COCO-OLAC method diagram">
+                      <button class="pub-figure-preview" type="button" aria-haspopup="dialog" aria-controls="publication-lightbox" aria-label="Enlarge the COCO-OLAC method diagram">
                         <img src="assets/img/publications/coco-olac-method.png" alt="COCO-OLAC framework: occlusion labels define positive and negative feature pairs for contrastive learning alongside the segmentation baseline." width="2307" height="1594" loading="lazy" decoding="async">
-                      </a>
+                      </button>
                     </figure>
                   </div>
                 </div>
@@ -255,7 +255,15 @@
     </footer>
   </div>
 
+  <dialog id="publication-lightbox" class="pub-lightbox" aria-label="Enlarged publication figure">
+    <div class="pub-lightbox-toolbar">
+      <button class="pub-lightbox-close" type="button" aria-label="Close enlarged figure" autofocus>&times;</button>
+    </div>
+    <img class="pub-lightbox-image" alt="">
+  </dialog>
+
   <script src="assets/js/scale.fix.js"></script>
+  <script defer src="assets/js/publication-lightbox.js?v=20261006"></script>
   <script>
     (function() {
       const themeToggle = document.getElementById('themeToggle');
