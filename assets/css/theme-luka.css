@@ -19,7 +19,7 @@ body.theme-luka *::after {
 }
 
 :root {
-  --luka-bg: #faf9f7;
+  --luka-bg: #ffffff;
   --luka-text: #3d3929;
   --luka-publication-text: #000000;
   --luka-accent: #c2714f;
@@ -60,7 +60,7 @@ body.theme-luka *::after {
 }
 
 [data-theme="light"] {
-  --luka-bg: #faf9f7;
+  --luka-bg: #ffffff;
   --luka-text: #3d3929;
   --luka-publication-text: #000000;
   --luka-accent: #c2714f;
