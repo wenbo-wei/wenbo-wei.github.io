@@ -403,7 +403,7 @@ body.theme-luka .pub-content .author {
 
 body.theme-luka .pub-content .periodical {
   margin-bottom: 6px;
-  color: var(--luka-publication-text);
+  color: var(--luka-text);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -439,7 +439,10 @@ body.theme-luka .publication-resources a:focus-visible {
   outline-offset: 3px;
 }
 
-body.theme-luka .pub-content .periodical strong,
+body.theme-luka .pub-content .periodical strong {
+  color: inherit;
+}
+
 body.theme-luka .pub-content .links,
 body.theme-luka .pub-content .links a {
   color: var(--luka-publication-text);
