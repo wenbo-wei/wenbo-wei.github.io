@@ -402,6 +402,38 @@ body.theme-luka .pub-content .links a {
   font-weight: 500;
 }
 
+body.theme-luka .publication-resources {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 6px;
+}
+
+body.theme-luka .publication-resources a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+}
+
+body.theme-luka .publication-resources svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+body.theme-luka .publication-resources a:hover {
+  background: var(--luka-border);
+  filter: none;
+}
+
+body.theme-luka .publication-resources a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 body.theme-luka .pub-content .periodical strong,
 body.theme-luka .pub-content .links,
 body.theme-luka .pub-content .links a {
