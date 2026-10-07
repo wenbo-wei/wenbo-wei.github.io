@@ -534,14 +534,14 @@ body.theme-luka .pub-lightbox-image {
   max-width: calc(100vw - 32px);
   max-height: calc(100vh - 96px);
   max-height: calc(100dvh - 96px);
-  cursor: grab;
+  cursor: default;
   user-select: none;
   touch-action: none;
   -webkit-user-drag: none;
 }
 
 body.theme-luka .pub-lightbox-image.is-dragging {
-  cursor: grabbing;
+  cursor: default;
 }
 
 body.theme-luka .awards-grid {
