@@ -19,7 +19,7 @@ body.theme-luka *::after {
 }
 
 :root {
-  --luka-page-width: 1440px;
+  --luka-page-width: 1280px;
   --luka-bg: #ffffff;
   --luka-text: #3d3929;
   --luka-publication-text: #000000;
