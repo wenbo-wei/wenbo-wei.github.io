@@ -106,6 +106,8 @@
   });
 
   dialog.addEventListener('close', () => {
+    // A queued close event must not clear a figure that has already reopened.
+    if (dialog.open) return;
     if (drag) endDrag({ pointerId: drag.pointerId, type: 'cancel' });
     document.documentElement.classList.remove('pub-lightbox-open');
     preview.removeAttribute('src');
