@@ -257,10 +257,15 @@ body.theme-luka .content {
 }
 
 body.theme-luka .section {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+body.theme-luka .section:not(#publications) {
+  /* Align the text with the existing PEMOLA figure's right edge. */
+  max-width: 761px;
 }
 
 body.theme-luka .section.visible {
@@ -763,7 +768,7 @@ body.theme-luka strong {
 
 @media (max-width: 480px) {
   body.theme-luka .section {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   body.theme-luka .section-title {
