@@ -460,6 +460,8 @@ body.theme-luka .pub-figure {
 body.theme-luka .pub-figure-preview {
   display: block;
   width: 100%;
+  /* Keep the existing thumbnail height as the page width changes. */
+  aspect-ratio: 2770 / 928;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -475,11 +477,10 @@ body.theme-luka .pub-lightbox-close:focus-visible {
 
 body.theme-luka .pub-figure img {
   display: block;
-  width: 100%;
-  height: auto;
-  /* Fit every complete thumbnail to PEMOLA's ratio; the lightbox uses the original. */
-  aspect-ratio: 2770 / 928;
-  object-fit: fill;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 html.pub-lightbox-open {
