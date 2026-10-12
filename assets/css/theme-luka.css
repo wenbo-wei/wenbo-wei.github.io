@@ -390,6 +390,16 @@ body.theme-luka .pub-content .title {
   font-weight: 600;
 }
 
+body.theme-luka .pub-content--title-width {
+  width: fit-content;
+  max-width: 100%;
+}
+
+body.theme-luka .pub-content--title-width .pub-figure {
+  /* Let the title determine the width instead of the image's intrinsic size. */
+  contain: inline-size;
+}
+
 body.theme-luka .pub-content .title a {
   color: inherit;
 }
