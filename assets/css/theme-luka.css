@@ -225,30 +225,6 @@ body.theme-luka .social-icons a:hover {
   transform: translateY(-2px);
 }
 
-body.theme-luka .visitor-card {
-  margin: 40px auto 0;
-  width: 240px;
-  padding: 18px 16px;
-  border: 1px dashed var(--luka-border);
-  border-radius: 14px;
-  color: var(--luka-secondary);
-  text-align: left;
-}
-
-body.theme-luka .visitor-card-title {
-  margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--luka-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-body.theme-luka .visitor-card-body {
-  font-size: 13px;
-  line-height: 1.6;
-}
-
 body.theme-luka .content {
   flex: 1;
   min-width: 0;
@@ -378,6 +354,8 @@ body.theme-luka .project-card {
 
 body.theme-luka .publications ol.bibliography {
   list-style: none;
+  width: fit-content;
+  max-width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -398,11 +376,6 @@ body.theme-luka .pub-content .title {
 body.theme-luka .pub-content--title-width {
   width: fit-content;
   max-width: 100%;
-}
-
-body.theme-luka .pub-content--title-width .pub-figure {
-  /* Let the title determine the width instead of the image's intrinsic size. */
-  contain: inline-size;
 }
 
 body.theme-luka .pub-content .title a {
@@ -470,13 +443,13 @@ body.theme-luka .pub-content .links a {
 
 body.theme-luka .pub-figure {
   margin: 16px 0 0;
+  /* Share the text-defined column width without using intrinsic image widths. */
+  contain: inline-size;
 }
 
 body.theme-luka .pub-figure-preview {
   display: block;
   width: 100%;
-  /* Keep the existing thumbnail height as the page width changes. */
-  aspect-ratio: 2770 / 928;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -492,8 +465,8 @@ body.theme-luka .pub-lightbox-close:focus-visible {
 
 body.theme-luka .pub-figure img {
   display: block;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   object-fit: contain;
 }
@@ -612,89 +585,6 @@ body.theme-luka .template-credit {
   font-size: 12px;
 }
 
-body.theme-luka .visitor-stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  margin-top: 14px;
-  color: var(--luka-secondary);
-  font-size: 12px;
-}
-
-body.theme-luka .visitor-count {
-  color: var(--luka-accent);
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-
-body.theme-luka .traffic-trend {
-  position: relative;
-  width: 100%;
-  max-width: 340px;
-  margin: 18px auto 0;
-  color: var(--luka-accent);
-}
-
-body.theme-luka .traffic-trend-heading,
-body.theme-luka .traffic-trend-range {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  color: var(--luka-secondary);
-  font-size: 10px;
-}
-
-body.theme-luka .traffic-trend-heading {
-  font-size: 11px;
-}
-
-body.theme-luka #traffic-trend-chart {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: visible;
-  border-radius: 4px;
-}
-
-body.theme-luka #traffic-trend-chart:focus-visible {
-  outline: 1px solid var(--luka-accent);
-  outline-offset: 4px;
-}
-
-body.theme-luka .traffic-baseline {
-  fill: none;
-  stroke: var(--luka-border);
-}
-
-body.theme-luka .traffic-line {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-body.theme-luka .traffic-area { fill: currentColor; opacity: 0.08; }
-body.theme-luka .traffic-dot { fill: currentColor; }
-body.theme-luka .traffic-marker { fill: currentColor; stroke: var(--luka-bg); stroke-width: 2; }
-
-body.theme-luka .traffic-tooltip {
-  position: absolute;
-  z-index: 1;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 3px 7px;
-  border: 1px solid var(--luka-border);
-  border-radius: 4px;
-  background: var(--luka-bg);
-  color: var(--luka-text);
-  font-size: 11px;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
 body.theme-luka h1,
 body.theme-luka h2,
 body.theme-luka h3,
@@ -760,10 +650,6 @@ body.theme-luka strong {
     height: 44px;
   }
 
-  body.theme-luka .visitor-card {
-    width: 100%;
-    max-width: 280px;
-  }
 }
 
 @media (max-width: 480px) {
