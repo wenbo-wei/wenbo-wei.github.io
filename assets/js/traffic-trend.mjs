@@ -58,8 +58,8 @@ export function makePaths(points) {
   const groups = [];
   for (const point of points) {
     const previous = groups.at(-1)?.at(-1);
-    // Leave gaps when samples are missing or the upstream counter has reset.
-    if (!previous || point.time - previous.time > 12 * 3600000 || point.views < previous.views) {
+    // Connect cumulative observations regardless of sampling delay; split on counter resets.
+    if (!previous || point.views < previous.views) {
       groups.push([point]);
     } else {
       groups.at(-1).push(point);

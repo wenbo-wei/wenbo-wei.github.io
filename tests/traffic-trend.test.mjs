@@ -27,7 +27,7 @@ test('requires the correct site, safe counters and chronological timestamps with
   ]) assert.throws(() => normalizeHistory(value));
 });
 
-test('shows only actual observations, preserves gaps and does not mutate history', () => {
+test('shows only actual observations and does not mutate history', () => {
   const source = [{ time: now - 32 * 24 * hour, views: 1 }, { time: now - 6 * hour, views: 8 }];
   const actual = makeSeries(source, { time: now, views: 9 }, now);
   assert.deepEqual(actual.map(point => point.views), [8, 9]);
@@ -41,11 +41,17 @@ test('one observation is a point rather than a fabricated historical line', () =
   assert.deepEqual(makePaths(points), []);
 });
 
-test('does not draw across missing samples or counter resets', () => {
-  for (const source of [
-    [{ time: now - 30 * hour, views: 1 }, { time: now - 24 * hour, views: 2 }, { time: now - 6 * hour, views: 3 }, { time: now, views: 4 }],
-    [{ time: now - 18 * hour, views: 8 }, { time: now - 12 * hour, views: 9 }, { time: now - 6 * hour, views: 1 }, { time: now, views: 2 }],
-  ]) assert.equal(makePaths(makeGeometry(source)).length, 2);
+test('connects irregular samples but splits at counter resets', () => {
+  for (const { source, segments } of [
+    {
+      source: [{ time: now - 30 * hour, views: 1 }, { time: now - 24 * hour, views: 2 }, { time: now - 6 * hour, views: 3 }, { time: now, views: 4 }],
+      segments: 1,
+    },
+    {
+      source: [{ time: now - 18 * hour, views: 8 }, { time: now - 12 * hour, views: 9 }, { time: now - 6 * hour, views: 1 }, { time: now, views: 2 }],
+      segments: 2,
+    },
+  ]) assert.equal(makePaths(makeGeometry(source)).length, segments);
 });
 
 test('constant and changing totals remain finite and inside the plotting bounds', () => {
