@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wenbo Wei | Computer Vision Research</title>
-  <meta name="description" content="Wenbo Wei, PhD in Computer Science from the University of Warwick. Research in occlusion-aware panoptic segmentation, PEMOLA, and occlusion benchmarks.">
+  <meta name="description" content="Wenbo Wei, PhD in Computer Science from the University of Warwick. Research in visual representation learning and occlusion-aware panoptic segmentation, including PEMOLA and occlusion benchmarks.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +47,7 @@
           <a href="https://scholar.google.com/citations?user=45fCx08AAAAJ&amp;hl=en" title="Google Scholar" aria-label="Wenbo Wei on Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
           <a href="https://github.com/wenbo-wei" title="GitHub" aria-label="Wenbo Wei on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/wenbo-wei-15116918b/" title="LinkedIn" aria-label="Wenbo Wei on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://huggingface.co/weiwb" title="Hugging Face" aria-label="Wenbo Wei on Hugging Face"><img src="assets/img/icons/huggingface.svg" width="22" height="22" alt="" aria-hidden="true"></a>
         </div>
       </div>
     </header>
@@ -55,9 +56,8 @@
       <div class="section" id="about">
         <h2 class="section-title">About Me</h2>
         <div class="section-body">
-          <p>Hi! I am <strong>Wenbo Wei (魏文博)</strong>. I received my PhD from the <strong>University of Warwick, UK</strong>, supervised by <a href="https://warwick.ac.uk/fac/sci/dcs/people/abhir_bhalerao/">Prof. Abhir Bhalerao</a> and <a href="https://warwick.ac.uk/fac/sci/dcs/people/shan_raza/">Dr. Shan Raza</a>. My research focuses on <strong>occlusion-aware panoptic segmentation</strong>, with the goal of enabling robust scene understanding in real-world occluded environments.</p>
-          <p>My work spans occlusion benchmark construction, curriculum learning, and lightweight modules for transformer-based segmentation. I developed <a href="https://github.com/wenbo-wei/PEMOLA">PEMOLA</a> and built the <a href="https://github.com/wenbo-wei/COCO-OLAC">COCO-OLAC</a> and <a href="https://github.com/wenbo-wei/PEMOLA/releases/tag/cityscapes-olac-annotations-v1.0">Cityscapes-OLAC</a> benchmarks, with publications at ICME 2026 and ICASSP 2025.</p>
-          <p>My research interests include computer vision, scene understanding, deep learning, and image segmentation.</p>
+          <p>Hi! I am <strong>Wenbo Wei (魏文博)</strong>. I received my PhD in Computer Science from the <strong>University of Warwick, UK</strong>, supervised by <a href="https://warwick.ac.uk/fac/sci/dcs/people/abhir_bhalerao/">Prof. Abhir Bhalerao</a> and <a href="https://warwick.ac.uk/fac/sci/dcs/people/shan_raza/">Dr. Shan Raza</a>. My research focuses on <strong>visual representation learning</strong>, particularly <strong>occlusion-aware panoptic segmentation</strong>, to improve scene understanding under occlusion.</p>
+          <p>My work spans occlusion benchmark construction, supervised contrastive learning, curriculum learning, and position encoding for transformer-based segmentation. I developed <a href="https://github.com/wenbo-wei/PEMOLA">PEMOLA</a>, a lightweight module that incorporates image-dependent occlusion cues into position encoding, and built the <a href="https://github.com/wenbo-wei/COCO-OLAC">COCO-OLAC</a> and <a href="https://github.com/wenbo-wei/PEMOLA/releases/tag/cityscapes-olac-annotations-v1.0">Cityscapes-OLAC</a> benchmarks. These projects led to publications at ICME 2026 and ICASSP 2025.</p>
         </div>
       </div>
 
@@ -71,7 +71,7 @@
                 <p class="exp-title"><strong>University of Warwick</strong></p>
                 <p class="exp-detail">PhD in Computer Science, School of Computer Science</p>
                 <p class="exp-detail">Coventry, United Kingdom</p>
-                <p class="exp-detail">Research: Occlusion-aware panoptic segmentation</p>
+                <p class="exp-detail">Research: Visual representation learning, with a focus on occlusion-aware panoptic segmentation</p>
                 <p class="exp-period">01/2021 – 06/2026</p>
               </div>
             </div>
@@ -155,6 +155,18 @@
                   </div>
                 </div>
               </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title"><a href="https://doi.org/10.1007/978-3-030-51971-1_7">Parallel Deep Neural Network for Motor Imagery EEG Recognition with Spatiotemporal Features</a></div>
+                    <div class="author">Desong Kong and <strong>Wenbo Wei</strong></div>
+                    <div class="periodical">Computer Science On-line Conference (<strong>CSOC</strong>), 2020</div>
+                    <div class="links publication-resources" role="group" aria-label="Motor imagery EEG paper resources">
+                      <a href="https://doi.org/10.1007/978-3-030-51971-1_7" title="Publisher page" aria-label="Read the motor imagery EEG paper on the publisher website">paper</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ol>
           </div>
         </div>
@@ -167,14 +179,14 @@
             <div class="experience-item">
               <img src="assets/img/institutions/warwick.svg" alt="University of Warwick crest" class="institution-logo" width="52" height="52">
               <div class="experience-content">
-                <p class="exp-title"><strong>Senior Teaching Assistant</strong></p>
+                <p class="exp-title"><strong>Teaching Assistant</strong></p>
                 <p class="exp-detail">Department of Computer Science, University of Warwick</p>
                 <p class="exp-detail">
-                  · <strong>Image and Video Analysis (CS413)</strong>: Optical flow, object tracking, image segmentation pipelines.<br>
-                  · <strong>Machine Learning (CS342)</strong>: Supervised/unsupervised learning, XGBoost, Random Forest, PCA.<br>
-                  · <strong>Neural Computing (CS331)</strong>: Neural networks from scratch, matrix calculus, loss functions, regularisation.
+                  · <strong>Image and Video Analysis</strong>: Image segmentation, optical flow estimation, and object tracking.<br>
+                  · <strong>Machine Learning</strong>: Representation learning, dimensionality reduction, and clustering.<br>
+                  · <strong>Neural Computing</strong>: Implementation of neural networks from scratch, backpropagation, and optimisation.
                 </p>
-                <p class="exp-period">09/2021 – 12/2023</p>
+                <p class="exp-period">09/2021 – 12/2024</p>
               </div>
             </div>
           </div>
@@ -185,7 +197,7 @@
               <div class="experience-content">
                 <p class="exp-title"><strong>Research Intern – Intelligent Vehicle Lab</strong></p>
                 <p class="exp-detail">Chongqing University of Posts and Telecommunications</p>
-                <p class="exp-detail">· Designed an end-to-end traffic sign recognition system covering data augmentation, model training, and benchmark evaluation.</p>
+                <p class="exp-detail">Developed an embedded vision system for vehicle and pedestrian detection in campus traffic monitoring. Compiled Darknet with CUDA support on NVIDIA Jetson TK1, deployed YOLO, and integrated GPU inference with camera input, achieving <strong>4.2 FPS</strong> on-device processing.</p>
                 <p class="exp-period">06/2015 – 08/2016</p>
               </div>
             </div>
@@ -197,22 +209,18 @@
         <h2 class="section-title">Projects</h2>
         <div class="section-body">
           <div class="card project-card">
-            <p><strong>Lightweight Occlusion-Aware Position Encoding for Robust Panoptic Segmentation</strong></p>
-            <p class="exp-period">11/2024 – 06/2025</p>
-            <p>Developed PEMOLA, a plug-and-play module for Mask2Former and Mask DINO that combines occlusion-level attention with learnable occlusion-label embeddings to modulate position embeddings. Improved panoptic segmentation across different occlusion severities with minimal computational overhead.</p>
+            <p><strong>PEMOLA: Occlusion-Aware Position Encoding for Panoptic Segmentation</strong></p>
+            <p class="exp-period">PhD Research</p>
+            <p>Developed a lightweight, plug-and-play module that incorporates image-dependent occlusion cues into position encoding for transformer-based panoptic segmentation. Spatial attention extracted from an occlusion classifier using Grad-CAM is combined with learnable occlusion-level embeddings to modulate position encodings along spatial and channel dimensions through residual gating.</p>
+            <p>Built Mask2Former variants with frozen <strong>SAM 3</strong> and <strong>DINOv3</strong> encoders to evaluate PEMOLA across backbones. With only <strong>0.01 GFLOPs</strong> of additional computation, PEMOLA improved instance, semantic, and panoptic segmentation across COCO-OLAC and Cityscapes-OLAC.</p>
             <p><a href="https://arxiv.org/abs/2607.18112">Paper</a> &middot; <a href="https://github.com/wenbo-wei/PEMOLA">Code</a> &middot; <a href="https://huggingface.co/weiwb/PEMOLA">Model weights</a></p>
           </div>
 
           <div class="card project-card">
-            <p><strong>Curriculum Learning for Panoptic Segmentation under Occlusion</strong></p>
-            <p class="exp-period">05/2024 – 09/2024</p>
-            <p>Developed a curriculum that orders training images from low to high occlusion within each epoch. Under a uniform distribution of occlusion levels, this strategy accelerated convergence and improved segmentation accuracy and generalisation in occluded scenes.</p>
-          </div>
-
-          <div class="card project-card">
-            <p><strong>Large-Scale Occlusion Benchmark Construction and Model Optimization</strong></p>
-            <p class="exp-period">06/2023 – 07/2024</p>
-            <p>Built two large-scale occlusion-annotated datasets (COCO-OLAC &amp; Cityscapes-OLAC) with a unified manual annotation pipeline covering three occlusion levels. Systematically quantified the impact of occlusion on SOTA panoptic segmentation models and proposed a contrastive learning-based method to enhance robustness.</p>
+            <p><strong>Occlusion Benchmarks and Supervised Representation Learning</strong></p>
+            <p class="exp-period">PhD Research</p>
+            <p>Established a manual annotation protocol using visible instance masks and estimated hidden extent to assign three image-level occlusion classes. Constructed <strong>COCO-OLAC (30,000 train / 5,000 val)</strong> and <strong>Cityscapes-OLAC (2,975 train / 500 val)</strong>, and benchmarked panoptic segmentation methods including Mask2Former and Mask DINO.</p>
+            <p>Developed occlusion-supervised contrastive training with positive/negative feature pairing and margin constraints alongside segmentation losses, producing clearer object boundaries and better separation of adjacent instances. Designed a curriculum based on occlusion severity that used <strong>60% fewer training updates</strong> for comparable validation performance.</p>
             <p><a href="https://arxiv.org/abs/2409.12760">Paper</a> &middot; <a href="https://github.com/wenbo-wei/COCO-OLAC">Code</a> &middot; <a href="https://github.com/wenbo-wei/COCO-OLAC/releases/tag/annotations-v1.0">COCO-OLAC annotations</a> &middot; <a href="https://github.com/wenbo-wei/PEMOLA/releases/tag/cityscapes-olac-annotations-v1.0">Cityscapes-OLAC annotations</a></p>
           </div>
 
@@ -223,8 +231,9 @@
         <h2 class="section-title">Skills &amp; Languages</h2>
         <div class="section-body">
           <div class="card">
-            <p><strong>Programming:</strong> Python, C</p>
+            <p><strong>Programming:</strong> Python</p>
             <p><strong>Frameworks:</strong> PyTorch, Detectron2</p>
+            <p><strong>Coding tools:</strong> Codex, Claude Code</p>
             <p><strong>Research:</strong> Academic writing, critical thinking, peer review</p>
             <p><strong>Languages:</strong> Mandarin (native), English (professional working proficiency)</p>
           </div>
