@@ -173,12 +173,12 @@ body.theme-luka .profile-card {
 
 body.theme-luka .image.avatar {
   display: block;
-  margin: 0 auto 28px;
+  margin: 0 auto 20px;
 }
 
 body.theme-luka .image.avatar img {
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 6px 24px var(--luka-shadow);
@@ -636,8 +636,8 @@ body.theme-luka strong {
 
 @media (max-width: 640px) {
   body.theme-luka .image.avatar img {
-    width: 148px;
-    height: 148px;
+    width: 120px;
+    height: 120px;
   }
 
   body.theme-luka .site-name {
